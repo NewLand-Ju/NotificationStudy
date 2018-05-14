@@ -1,75 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    >
+    android:padding="16dp">
 
     <EditText
         android:id="@+id/edit_group_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="edit Your ID"/>
+        android:hint="edit Your ID" />
 
     <Button
         android:id="@+id/btn_create"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="create NotificationManager"/>
+        android:text="create NotificationManager" />
 
     <Button
         android:id="@+id/btn_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="send Message"
-        />
+        android:text="send Message" />
 
     <Button
         android:id="@+id/btn_comment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="send Comment"
-
-        />
+        android:text="send Comment" />
 
     <Button
         android:id="@+id/btn_notice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="send Notice"
+        android:text="send Notice" />
 
-        />
-
-    <LinearLayout
+    <View
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom"
-        android:orientation="vertical"
-        >
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
-        <Button
-            android:id="@+id/btn_delete_comment"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Delete Comment Channel"
-            />
+    <Button
+        android:id="@+id/btn_delete_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Comment Channel" />
 
-        <Button
-            android:id="@+id/btn_setting_message"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Message channel Setting"
-            />
+    <Button
+        android:id="@+id/btn_setting_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message channel Setting" />
 
-        <Button
-            android:id="@+id/btn_setting"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Setting"
-            />
-
-    </LinearLayout>
-
+    <Button
+        android:id="@+id/btn_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Setting" />
 </LinearLayout>
