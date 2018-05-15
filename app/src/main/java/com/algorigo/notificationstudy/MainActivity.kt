@@ -14,9 +14,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btn_create.setOnClickListener { MyNotification.createChannel(this, if (edit_group_id.text.isNotEmpty()) edit_group_id.text.toString() else "Default") }
-        btn_message.setOnClickListener { MyNotification.sendNotification(this, 1, MyNotification.MESSAGE + edit_group_id.text.toString(), "MESSAGE_TITLE", "MESSAGE_BODY") }
-        btn_comment.setOnClickListener { MyNotification.sendNotification(this, 2, MyNotification.COMMENT + edit_group_id.text.toString(), "COMMENT_TITLE", "COMMENT_BODY") }
-        btn_notice.setOnClickListener { MyNotification.sendNotification(this, 3, MyNotification.NOTICE + edit_group_id.text.toString(), "NOTICE_TITLE", "NOTICE_BODY") }
+        btn_message.setOnClickListener { MyNotification.sendNotification(this, 1, MyNotification.MESSAGE + edit_group_id.text.toString(), "${MyNotification.MESSAGE}_TITLE", "${MyNotification.MESSAGE}_BODY") }
+        btn_comment.setOnClickListener { MyNotification.sendNotification(this, 2, MyNotification.COMMENT + edit_group_id.text.toString(), "${MyNotification.COMMENT}_TITLE", "${MyNotification.COMMENT}_BODY") }
+        btn_notice.setOnClickListener { MyNotification.sendNotification(this, 3, MyNotification.NOTICE + edit_group_id.text.toString(), "${MyNotification.NOTICE}_TITLE", "${MyNotification.NOTICE}_BODY") }
 
         btn_delete_comment.setOnClickListener { MyNotification.deleteChannel(this, MyNotification.COMMENT + edit_group_id.text.toString()) }
         btn_setting_message.setOnClickListener { goToNotificationSettings(MyNotification.MESSAGE + edit_group_id.text.toString()) }
